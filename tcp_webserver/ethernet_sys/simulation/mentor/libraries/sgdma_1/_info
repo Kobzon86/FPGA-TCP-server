@@ -1,0 +1,306 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projects/ethernet/ethernet_sys/simulation/mentor
+vbyteenable_gen_which_resides_within_ethernet_sys_sgdma_1
+Z1 !s110 1676145140
+!i10b 1
+!s100 SY]9VFIN8XXN;b:]UFE@N0
+I0BVkU=oWZzNT5=_VIERPb3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1676143077
+Z4 8./../submodules/ethernet_sys_sgdma_1.v
+Z5 F./../submodules/ethernet_sys_sgdma_1.v
+L0 1419
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1676145140.000000
+Z8 !s107 ./../submodules/ethernet_sys_sgdma_1.v|
+Z9 !s90 -reportprogress|300|./../submodules/ethernet_sys_sgdma_1.v|-work|sgdma_1|
+!i113 1
+Z10 o-work sgdma_1
+Z11 tCvgOpt 0
+vcontrol_status_slave_which_resides_within_ethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 me=dzc]Sod71nm>SlYTo]3
+IgK^E:I2;ENm_bHAOR<X9n0
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdescriptor_read_which_resides_within_ethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 NXNKD0If9`HE9DVOOkNC<0
+Ig2H0gI[WESN[6@GSP=:C10
+R2
+R0
+R3
+R4
+R5
+L0 512
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdescriptor_read_which_resides_within_ethernet_sys_sgdma_1_control_bits_fifo
+R1
+!i10b 1
+!s100 i:6>5omWOge?8Zk=T>:I11
+I_6cUQ7dRHci:mXZ[IzEFM0
+R2
+R0
+R3
+R4
+R5
+L0 449
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdescriptor_write_which_resides_within_ethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 A=[]kY;HkOkBE9hzAdn>@3
+IKRRJW`@@Y1ClJCJ;FHZ:V0
+R2
+R0
+R3
+R4
+R5
+L0 824
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 n;hMPR=k1;>nW9AfNWQi]0
+I7GmclgRBolTB>4P8i0oQC2
+R2
+R0
+R3
+R4
+R5
+L0 1998
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_chain
+R1
+!i10b 1
+!s100 n?DF0@cOA7=FZ1``[mlBz1
+IbJl`7IAXj>`9_Xzoao>`B1
+R2
+R0
+R3
+R4
+R5
+L0 954
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_command_fifo
+R1
+!i10b 1
+!s100 fIPl?m<03HGKHMnUeLiM_0
+Io[iTz7ZC@D[c8aoiZKIH81
+R2
+R0
+R3
+R4
+R5
+L0 1809
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_command_grabber
+R1
+!i10b 1
+!s100 IibZ<Vg;fQYOdWo]14Z1O2
+IKV<_GW5maiAlB_Fmmjh?91
+R2
+R0
+R3
+R4
+R5
+L0 1164
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_desc_address_fifo
+R1
+!i10b 1
+!s100 Q7afE7lkKN:;BHIlTjFhi3
+IFFmVShBTb7WSWaWC;]3nR1
+R2
+R0
+R3
+R4
+R5
+L0 1872
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_m_write
+R1
+!i10b 1
+!s100 ?[h;>1JFG0MdKPeT8mzK71
+IeU6G?RiUecC6n2A8KnR0_3
+R2
+R0
+R3
+R4
+R5
+L0 1468
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vethernet_sys_sgdma_1_status_token_fifo
+R1
+!i10b 1
+!s100 HhT<cm7TGiIA=zf9KAWbV3
+IIPe5bK<Xm@2Y2@:<cA8[]3
+R2
+R0
+R3
+R4
+R5
+L0 1935
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsixteen_bit_byteenable_FSM_which_resides_within_ethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 bMU`nU[ZfBzLAa_G=K7W>3
+I7Zdczf9AM8T3aT3eQ`Q9B2
+R2
+R0
+R3
+R4
+R5
+L0 1275
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsixteen_bit_byteenable_@f@s@m_which_resides_within_ethernet_sys_sgdma_1
+vthirty_two_bit_byteenable_FSM_which_resides_within_ethernet_sys_sgdma_1
+R1
+!i10b 1
+!s100 1g;GF86b<n8n_;e]aEf_N3
+I?IclmB=:W@b<4TBm[VTP;3
+R2
+R0
+R3
+R4
+R5
+L0 1314
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nthirty_two_bit_byteenable_@f@s@m_which_resides_within_ethernet_sys_sgdma_1

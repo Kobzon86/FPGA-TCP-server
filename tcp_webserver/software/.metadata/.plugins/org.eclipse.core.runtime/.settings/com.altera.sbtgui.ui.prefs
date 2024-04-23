@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\projects\\gitted\\tcp\\ethernet\\software\\tcp_webserver
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\projects\\gitted\\tcp\\ethernet\\ethernet_sys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\projects\\gitted\\tcp\\ethernet\\software\\tcp_webserver_bsp

@@ -1,0 +1,221 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\projects\quartus\ethernet\ethernet_sys.qsys --synthesis=VERILOG --output-directory=C:\projects\quartus\ethernet\ethernet_sys\synthesis --family="Cyclone IV GX" --part=EP4CGX15BF14C6
+Progress: Loading ethernet/ethernet_sys.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 18.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 18.1]
+Progress: Parameterizing module clk_1
+Progress: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding descriptor_memory [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module descriptor_memory
+Progress: Adding eth_tse_0 [altera_eth_tse 18.1]
+Progress: Parameterizing module eth_tse_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 18.1]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 18.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pcie_hard_ip_0 [altera_pcie_hard_ip 18.1]
+Progress: Parameterizing module pcie_hard_ip_0
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Adding pio_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_1
+Progress: Adding sgdma_0 [altera_avalon_sgdma 18.1]
+Progress: Parameterizing module sgdma_0
+Progress: Adding sgdma_1 [altera_avalon_sgdma 18.1]
+Progress: Parameterizing module sgdma_1
+Progress: Adding sram_cntrlr_0 [sram_cntrlr 1.0]
+Progress: Parameterizing module sram_cntrlr_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ethernet_sys.eth_tse_0: MII/GMII is automatically selected in 10/100/1000 Mb Ethernet MAC with 1000BASE-X/SGMII PCS core variations
+Info: ethernet_sys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: ethernet_sys.lcd_16207_0: Altera Avalon LCD 16207 will only be supported in Quartus Prime Standard Edition in the future release.
+Info: ethernet_sys.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ethernet_sys.sgdma_0: Scatter-Gather DMA Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: ethernet_sys.sgdma_1: Scatter-Gather DMA Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: ethernet_sys.sgdma_0.out/eth_tse_0.transmit: The sink has a error signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: ethernet_sys.eth_tse_0.receive/sgdma_1.in: Ready latency is 2 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: ethernet_sys.eth_tse_0.receive/sgdma_1.in: The source has a error signal of 6 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Warning: ethernet_sys.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: ethernet_sys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: ethernet_sys: Generating ethernet_sys "ethernet_sys" for QUARTUS_SYNTH
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: altpll_0: "ethernet_sys" instantiated altpll "altpll_0"
+Info: descriptor_memory: Starting RTL generation for module 'ethernet_sys_descriptor_memory'
+Info: descriptor_memory:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ethernet_sys_descriptor_memory --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0006_descriptor_memory_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0006_descriptor_memory_gen//ethernet_sys_descriptor_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: descriptor_memory: Done RTL generation for module 'ethernet_sys_descriptor_memory'
+Info: descriptor_memory: "ethernet_sys" instantiated altera_avalon_onchip_memory2 "descriptor_memory"
+Info: eth_tse_0: "ethernet_sys" instantiated altera_eth_tse "eth_tse_0"
+Info: jtag_uart_0: Starting RTL generation for module 'ethernet_sys_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=ethernet_sys_jtag_uart_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0007_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0007_jtag_uart_0_gen//ethernet_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'ethernet_sys_jtag_uart_0'
+Info: jtag_uart_0: "ethernet_sys" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: lcd_16207_0: Starting RTL generation for module 'ethernet_sys_lcd_16207_0'
+Info: lcd_16207_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=ethernet_sys_lcd_16207_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0008_lcd_16207_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0008_lcd_16207_0_gen//ethernet_sys_lcd_16207_0_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd_16207_0: Done RTL generation for module 'ethernet_sys_lcd_16207_0'
+Info: lcd_16207_0: "ethernet_sys" instantiated altera_avalon_lcd_16207 "lcd_16207_0"
+Info: nios2_gen2_0: "ethernet_sys" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'ethernet_sys_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ethernet_sys_onchip_memory2_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0009_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0009_onchip_memory2_0_gen//ethernet_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'ethernet_sys_onchip_memory2_0'
+Info: onchip_memory2_0: "ethernet_sys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pio_0: Starting RTL generation for module 'ethernet_sys_pio_0'
+Info: pio_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ethernet_sys_pio_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0010_pio_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0010_pio_0_gen//ethernet_sys_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'ethernet_sys_pio_0'
+Info: pio_0: "ethernet_sys" instantiated altera_avalon_pio "pio_0"
+Info: pio_1: Starting RTL generation for module 'ethernet_sys_pio_1'
+Info: pio_1:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ethernet_sys_pio_1 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0011_pio_1_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0011_pio_1_gen//ethernet_sys_pio_1_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_1: Done RTL generation for module 'ethernet_sys_pio_1'
+Info: pio_1: "ethernet_sys" instantiated altera_avalon_pio "pio_1"
+Info: sgdma_0: Starting RTL generation for module 'ethernet_sys_sgdma_0'
+Info: sgdma_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=ethernet_sys_sgdma_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0012_sgdma_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0012_sgdma_0_gen//ethernet_sys_sgdma_0_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_0: Done RTL generation for module 'ethernet_sys_sgdma_0'
+Info: sgdma_0: "ethernet_sys" instantiated altera_avalon_sgdma "sgdma_0"
+Info: sgdma_1: Starting RTL generation for module 'ethernet_sys_sgdma_1'
+Info: sgdma_1:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=ethernet_sys_sgdma_1 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0013_sgdma_1_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0013_sgdma_1_gen//ethernet_sys_sgdma_1_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_1: Done RTL generation for module 'ethernet_sys_sgdma_1'
+Info: sgdma_1: "ethernet_sys" instantiated altera_avalon_sgdma "sgdma_1"
+Info: sram_cntrlr_0: "ethernet_sys" instantiated sram_cntrlr "sram_cntrlr_0"
+Info: timer_0: Starting RTL generation for module 'ethernet_sys_timer_0'
+Info: timer_0:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ethernet_sys_timer_0 --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0015_timer_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0015_timer_0_gen//ethernet_sys_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'ethernet_sys_timer_0'
+Info: timer_0: "ethernet_sys" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ethernet_sys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "ethernet_sys" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "ethernet_sys" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: irq_mapper: "ethernet_sys" instantiated altera_irq_mapper "irq_mapper"
+Info: avalon_st_adapter: "ethernet_sys" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "ethernet_sys" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: rst_controller: "ethernet_sys" instantiated altera_reset_controller "rst_controller"
+Info: i_tse_mac: "eth_tse_0" instantiated altera_eth_tse_mac "i_tse_mac"
+Info: avalon_arbiter: "eth_tse_0" instantiated altera_eth_tse_avalon_arbiter "avalon_arbiter"
+Info: i_tse_pcs_0: "eth_tse_0" instantiated altera_eth_tse_pcs_pma_gxb "i_tse_pcs_0"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_eth_tse_std_synchronizer.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_eth_tse_std_synchronizer_bundle.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_eth_tse_ptp_std_synchronizer.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_false_path_marker.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_reset_synchronizer.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_clock_crosser.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_13.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_24.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_34.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_opt_1246.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_opt_14_44.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_a_fifo_opt_36_10.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_gray_cnt.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_sdpm_altsyncram.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_altsyncram_dpm_fifo.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_bin_cnt.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ph_calculator.sv
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_sdpm_gen.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x10.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x10.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x10_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x14.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x14.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x14_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x2.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x2.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x2_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x23.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x23.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x23_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x36.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x36.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x36_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x40.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x40.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x40_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_dec_x30.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x30.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_enc_x30_wrapper.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_tse_ecc_status_crosser.v
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_std_synchronizer_nocut.v
+Info: i_altgxb_0: "eth_tse_0" instantiated altera_eth_tse_altgxb "i_altgxb_0"
+Info: cpu: Starting RTL generation for module 'ethernet_sys_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=ethernet_sys_nios2_gen2_0_cpu --dir=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0021_cpu_gen/ --quartus_bindir=C:/intelFPGA/18.1/quartus/bin64/ --verilog --config=C:/Users/ananev/AppData/Local/Temp/alt9808_6608175383620383505.dir/0021_cpu_gen//ethernet_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.03.26 13:41:29 (*) Starting Nios II generation
+Info: cpu: # 2024.03.26 13:41:29 (*)   Checking for plaintext license.
+Info: cpu: # 2024.03.26 13:41:30 (*)   Plaintext license not found.
+Info: cpu: # 2024.03.26 13:41:30 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.03.26 13:41:30 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.03.26 13:41:30 (*)   Creating all objects for CPU
+Info: cpu: # 2024.03.26 13:41:31 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.03.26 13:41:31 (*)   Creating plain-text RTL
+Info: cpu: # 2024.03.26 13:41:32 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ethernet_sys_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_006: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_006"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_004: "mm_interconnect_1" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/projects/quartus/ethernet/ethernet_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: ethernet_sys: Done "ethernet_sys" with 59 modules, 233 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

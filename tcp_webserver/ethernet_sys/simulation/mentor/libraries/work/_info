@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projects/ethernet/ethernet_sys/simulation/mentor
+vethernet_sys
+!s110 1676146284
+!i10b 1
+!s100 J]ITXNYeQb;8_WdKgLa:<0
+IgLa?R1nDLm[QFbBSlzCzR2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676146268
+8C:/projects/ethernet/ethernet_sys/simulation/ethernet_sys.v
+FC:/projects/ethernet/ethernet_sys/simulation/ethernet_sys.v
+L0 6
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1676146284.000000
+!s107 C:/projects/ethernet/ethernet_sys/simulation/ethernet_sys.v|
+!s90 -reportprogress|300|C:/projects/ethernet/ethernet_sys/simulation/ethernet_sys.v|
+!i113 1
+tCvgOpt 0

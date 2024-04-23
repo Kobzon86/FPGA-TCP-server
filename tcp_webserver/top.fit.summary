@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Mar 26 14:05:16 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : top
+Top-level Entity Name : golden_top
+Family : Cyclone IV GX
+Device : EP4CGX15BF14C6
+Timing Models : Final
+Total logic elements : 10,585 / 14,400 ( 74 % )
+    Total combinational functions : 7,204 / 14,400 ( 50 % )
+    Dedicated logic registers : 8,086 / 14,400 ( 56 % )
+Total registers : 8086
+Total pins : 68 / 81 ( 84 % )
+Total virtual pins : 0
+Total memory bits : 406,492 / 552,960 ( 74 % )
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 1 / 2 ( 50 % )
+Total GXB Receiver Channel PMA : 1 / 2 ( 50 % )
+Total GXB Transmitter Channel PCS : 1 / 2 ( 50 % )
+Total GXB Transmitter Channel PMA : 1 / 2 ( 50 % )
+Total PLLs : 2 / 3 ( 67 % )

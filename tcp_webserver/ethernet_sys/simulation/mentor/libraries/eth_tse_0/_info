@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projects/ethernet/ethernet_sys/simulation/mentor
+vethernet_sys_eth_tse_0
+!s110 1676145141
+!i10b 1
+!s100 >5JFJE@]4`CN7QD8@52Xh2
+IC1YKRjb_BoUI<;NafLY<22
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676143076
+8./../submodules/ethernet_sys_eth_tse_0.v
+F./../submodules/ethernet_sys_eth_tse_0.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1676145141.000000
+!s107 ./../submodules/ethernet_sys_eth_tse_0.v|
+!s90 -reportprogress|300|./../submodules/ethernet_sys_eth_tse_0.v|-work|eth_tse_0|
+!i113 1
+o-work eth_tse_0
+tCvgOpt 0
