@@ -1,0 +1,151 @@
+//--------------------------------------------------------------------------//
+// Title:       golden_top.v                                                //
+// Rev:         Rev 1                                                       //
+// Created:     3/20/2010                                                   //
+//--------------------------------------------------------------------------//
+// Description: C4GX Starter Kit Rev B PCB signal name and I/O standards    //
+//              for all FPGA pins                                           //
+//--------------------------------------------------------------------------//
+// Revision History:                                                        //
+// Rev 1:       First cut from tcl-script output                            //
+//----------------------------------------------------------------------------
+//------ 1 ------- 2 ------- 3 ------- 4 ------- 5 ------- 6 ------- 7 ------7
+//------ 0 ------- 0 ------- 0 ------- 0 ------- 0 ------- 0 ------- 0 ------8
+//----------------------------------------------------------------------------
+// Rev 2:       Further IO description                                      //
+// Created: 01.27.2016, by Kirstin Kita
+//----------------------------------------------------------------------------
+//------ 1 ------- 2 ------- 3 ------- 4 ------- 5 ------- 6 ------- 7 ------7
+//------ 0 ------- 0 ------- 0 ------- 0 ------- 0 ------- 0 ------- 0 ------8
+//----------------------------------------------------------------------------
+//Copyright © 2010 Altera Corporation. All rights reserved.  Altera products  
+//are protected under numerous U.S. and foreign patents, maskwork rights,     
+//copyrights and other intellectual property laws.                            
+//                                                                            
+//This reference design file, and your use thereof, is subject to and         
+//governed by the terms and conditions of the applicable Altera Reference     
+//Design License Agreement.  By using this reference design file, you         
+//indicate your acceptance of such terms and conditions between you and       
+//Altera Corporation.  In the event that you do not agree with such terms and 
+//conditions, you may not use the reference design file. Please promptly      
+//destroy any copies you have made.                                           
+//                                                                            
+//This reference design file being provided on an "as-is" basis and as an     
+//accommodation and therefore all warranties, representations or guarantees   
+//of any kind (whether express, implied or statutory) including, without      
+//limitation, warranties of merchantability, non-infringement, or fitness for 
+//a particular purpose, are specifically disclaimed.  By making this          
+//reference design file available, Altera expressly does not recommend,       
+//suggest or require that this reference design file be used in combination   
+//with any other product not provided by Altera.                              
+//                                                                            
+
+
+//`define	enet_sma_xcvr          //comment in to use Ethernet transceiver
+                                   //Requires valid ALTGX megafunction
+
+//`define	pcie_xcvr              //comment in to use PCIe transceiver
+                                   //Requires valid ALTGX megafunction
+
+`define	clkin_50	clk_b7_se	
+`define fsm
+`define flash
+`define ssram
+`define ethernet2_5
+`define user_io
+`define epcs
+
+`ifdef	enet_sma_xcvr
+		`define	use_enet_sma_xcvr_refclk_p
+		`define	enet_sma_xcvr_refclk_p	refclk_125_p
+`endif
+
+`ifdef	pcie_xcvr
+		`define	use_pcie_xcvr_refclk_p
+		`define	pcie_xcvr_refclk_p	pcie_refclk_p
+`endif
+
+module golden_top (
+
+//-----------Clocks-----------
+	input			diff_125_p,
+	input			clk_b7_se,
+
+//-----------FSM--------------
+////  2.5-V  ////
+`ifdef fsm
+	output	[23:0]	fsm_a, 
+	inout	[15:0]	fsm_d, 
+	output			fsm_oen,
+	output			fsm_wen,
+`endif
+
+//-----------Flash------------
+////        2.5-V        ////
+`ifdef flash
+	output			flash_cen,
+`endif
+
+//-----------Ssram-----------
+////        2.5-V        ////
+`ifdef ssram
+	output			sram_bwbn,
+	output			sram_cen,
+	output			sram_clk,
+`endif
+	
+//---------Ethernet----------
+`ifdef ethernet2_5
+////        2.5-V        ////
+	input			enet_intn,
+	output			enet_mdc,
+	inout			enet_mdio,
+	output			enet_resetn,
+`endif
+
+`ifdef	enet_sma_xcvr
+////     1.4-V PCML     ////
+	input			enetr_rx_p,
+	output			enetr_tx_p,
+`endif
+
+`ifdef	use_enet_sma_xcvr_refclk_p
+////         LVDS       ////
+	input			refclk_125_p,
+`endif
+
+//----------PCIe--------------
+	input			pcie_perstn,
+	
+`ifdef use_pcie_xcvr_refclk_p
+////   100 MHz HCSL   ////
+	input			pcie_refclk_p,
+`endif
+
+`ifdef	pcie_xcvr
+////    1.4-V PCML    ////
+	input			pcie_rx_p,
+	output			pcie_tx_p,
+`endif
+
+//----------User IO-----------
+`ifdef user_io
+	input			cpu_resetn,
+	output			lcd_csn,
+	output	[3:0]	user_led, 
+	input	[1:0]	user_pb,
+	output			max2_csn,
+`endif
+	
+//----------EPCS-----------
+`ifdef epcs
+    inout   config_data0, // for epcs r/w using NiosII
+    output  dclk,
+    output  epcs_cen,
+    output  epcs_sdo
+`endif
+
+);
+
+
+endmodule

@@ -1,0 +1,269 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 1.738
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 1.830
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : 14.820
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50'
+Slack : 17.777
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 43.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'n/a'
+Slack : 3.773
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 4.805
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 6.176
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 48.181
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.882
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 1.030
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 3.726
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_125'
+Slack : 3.976
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pma0|clockout'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 4.715
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : 9.714
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.604
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 2.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 2.600
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : 15.144
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50'
+Slack : 18.027
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 44.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'n/a'
+Slack : 3.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 5.141
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 6.563
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.793
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.918
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.935
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 3.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_125'
+Slack : 3.979
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pma0|clockout'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 4.711
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.608
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 4.520
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 5.160
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : 17.034
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50'
+Slack : 18.750
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 46.544
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'n/a'
+Slack : 2.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 6.122
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 7.725
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 49.223
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pcs0|clkout'
+Slack : 3.745
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_125'
+Slack : 3.987
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u0|eth_tse_0|i_altgxb_0|the_altera_tse_gxb_gige_inst|the_altera_tse_alt_gx_civgx|altera_tse_altgx_civgx_gige_alt_c3gxb_g308_component|transmit_pma0|clockout'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u0|altpll_0|sd1|pll7|clk[0]'
+Slack : 4.752
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.472
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.401
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Mar 26 14:04:24 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : top
+Top-level Entity Name : golden_top
+Family : Cyclone IV GX
+Total logic elements : 12,143
+    Total combinational functions : 7,182
+    Dedicated logic registers : 8,120
+Total registers : 8120
+Total pins : 65
+Total virtual pins : 0
+Total memory bits : 406,492
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 1
+Total GXB Receiver Channel PMA : 1
+Total GXB Transmitter Channel PCS : 1
+Total GXB Transmitter Channel PMA : 1
+Total PLLs : 2
