@@ -9,7 +9,7 @@ The software implementation of the ARP and TCP/IP protocols allows you to establ
 The board has a fixed IP, which is displayed on the LCD display after power is turned on.
 ![image](https://github.com/Kobzon86/FPGA-TCP-server/assets/65023680/968d8efb-ae69-401b-a33a-04e0b811688b)
 
-HTML страница:
+HTML page:
 
 ![image](https://github.com/Kobzon86/FPGA-TCP-server/assets/65023680/159c18ba-fc5d-4cb1-adc8-f9c8a85a980c)
 
